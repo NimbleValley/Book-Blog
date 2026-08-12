@@ -21,7 +21,7 @@ export function Welcome() {
 
   return (
     <main className="bg-primary flex justify-center pt-16 pb-4 min-h-screen">
-      <div className="flex-1 flex flex-col gap-16 min-h-0">
+      <div className="flex-1 flex flex-col gap-16 min-h-0 max-w-[700px]">
 
         <div className="flex flex-row items-center w-full gap-4 px-5">
           <h1 className="text-7xl flex-1 font-bold font-fancy text-left text-text">
