@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-sans: 'Lexend', sans-serif;
+  --font-fancy: 'Playfair Display', serif;
+  --color-primary: #5F0F40;
+  --color-secondary: #9A031E;
+  --color-text: white;
+  --color-accent: #FB8B24;
+  --color-extra: #0F4C5C;
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
