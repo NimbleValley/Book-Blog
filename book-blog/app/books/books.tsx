@@ -46,7 +46,7 @@ export default function Books() {
                         <div className="absolute inset-y-1 left-[30%] w-[3px] bg-[image:linear-gradient(90deg,rgba(0,0,0,0.35),rgba(255,255,255,0.1)_50%,rgba(0,0,0,0.35))] rounded-sm opacity-70 pointer-events-none" />
                         <div className="absolute inset-y-1 right-[30%] w-[3px] bg-[image:linear-gradient(90deg,rgba(0,0,0,0.35),rgba(255,255,255,0.1)_50%,rgba(0,0,0,0.35))] rounded-sm opacity-70 pointer-events-none" />
 
-                        <h2 className="text-3xl z-20 font-fancy font-bold text-left text-text">{book.title}</h2>
+                        <h2 className="[text-shadow:1px_1px_0_rgba(0,0,0,0.5),-1px_-1px_0_rgba(0,0,0,0.5),1px_-1px_0_rgba(0,0,0,0.5),-1px_1px_0_rgba(0,0,0,0.5)] text-nowrap text-3xl z-20 font-fancy font-bold text-left text-text">{book.title}</h2>
                         <p className="opacity-0 z-20 text-secondary group-hover:opacity-100 transition-opacity duration-300 text-center">Rating: {book.rating.composite}</p>
                         <p className="text-lg z-20 text-right text-text">{book.author}</p>
                     </div>
