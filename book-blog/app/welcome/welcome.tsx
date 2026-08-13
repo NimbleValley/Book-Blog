@@ -28,7 +28,7 @@ export function Welcome() {
             Mason's Boog.
           </h1>
           <p className="text-2xl flex-1 text-right text-right text-accent">
-            Boog is slang for book-blog, as you can see. {len == -1 ? ' ' : len} books currently.
+            Boog is slang for book-blog. {len == -1 ? ' ' : len} books currently.
           </p>
         </div>
 
