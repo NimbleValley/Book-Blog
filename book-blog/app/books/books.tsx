@@ -9,14 +9,16 @@ export default function Books() {
     useEffect(() => {
         async function getBooks() {
 
-            const { data: books } = await supabase.from('Books').select()
+            const { data: books } = await supabase
+                .from('Books')
+                .select()
+                .order('created_at', { ascending: false });
+
             if (!books)
                 return;
-            console.log(books[0].title);
 
             if (books) {
                 setFetchedBooks(books as Book[]);
-
             }
 
         }

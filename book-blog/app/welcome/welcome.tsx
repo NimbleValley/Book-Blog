@@ -9,7 +9,7 @@ export function Welcome() {
 
   useEffect(() => {
     async function getBooks() {
-      const { data: books } = await supabase.from('Books').select()
+      const { data: books } = await supabase.from('Books').select();
 
       setLen(books?.length ?? -1);
 
@@ -28,7 +28,7 @@ export function Welcome() {
             Mason's Boog.
           </h1>
           <p className="text-2xl flex-1 text-right text-right text-accent">
-            Boog is slang for book-blog. {len == -1 ? ' ' : len} books currently.
+            Boog is slang for book-blog. These are some of the books I've read & rated over the last couple years. {len == -1 ? ' ' : len} books currently.
           </p>
         </div>
 
